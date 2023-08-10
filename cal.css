@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin-top: 70px;
+    /* background-image: linear-gradient(to right, rgb(61, 58, 58),rgba(82, 59, 82, 0.932), rgb(61, 58, 58)); */
+    background-image: linear-gradient(to right, aqua, blue, aqua);
+}
+.calculator{
+    
+    width: 300px;
+    height: 640px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 7px;
+    background-color: rgba(88, 76, 76, 0.991);
+    box-shadow: 15px 5px 5px rgba(30, 28, 28, 0.699);
+}
+.heading{
+        display: flex;
+        width: 100%;
+        height: 8%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        justify-content: center;
+        margin-top: 15px;
+        font-size: 30px;
+        
+}
+
+#display{
+    border: 3px solid rgba(18, 20, 18, 0.644);
+    height: 15%;
+    display: flex;
+    flex-direction:column;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgba(128, 124, 124, 0.548);
+    /* box-shadow: 15px 5px 5px rgba(30, 28, 28, 0.699); */
+    
+}
+#inputBox{
+    border: 2px solid rgba(62, 57, 57, 0.317);
+    height: 25px;
+    width: 100%;
+    text-align: end;
+    border-radius: 5px;
+    background-color: rgba(245, 222, 179, 0.292);
+    font-size: 20px;
+    color: black;
+}
+
+#inputBox::placeholder{
+    color: rgba(0, 0, 0, 0.705);
+}
+#outputBox{
+    height: 70px;
+    text-align:right;
+    font-size: 30px;
+    width: 100%;
+    border: none;
+    background-color: rgba(128, 124, 124, 0.548);
+    border-radius: 5px;
+}
+
+#outputBox::placeholder{
+    color:rgba(0, 0, 0, 0.224);
+}
+.name{
+    height: 5%;
+}
+.name> h3{
+    text-align: center;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+.number{
+    border: 2px solid black;
+    height: 390px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(65, 62, 62);
+    /* box-shadow: 15px 5px 5px rgba(30, 28, 28, 0.699); */
+}
+.top{
+    height: 47px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.top > button {
+    height: 49px;
+    width: 97px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.881);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    /* box-shadow: 15px 5px 5px rgba(30, 28, 28, 0.699); */
+}
+
+
+.mid{
+    height: 280px;
+    display: flex;
+}
+
+.right{
+    height: 280px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} 
+.right > button{
+    
+    width: 75px;
+    height: 89px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.881);
+    border-radius: 15px;
+    /* box-shadow: 15px 5px 5px rgba(30, 28, 28, 0.699); */
+}
+
+
+.left{
+    height: 280px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} 
+
+.left > button{
+    height: 67px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.881);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    /* box-shadow: 15px 5px 5px rgba(30, 28, 28, 0.699); */
+}
+
+
+.bottom{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.bottom  > button {
+    height: 49px;
+    width: 97px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.881);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    /* box-shadow: 15px 5px 5px rgba(30, 28, 28, 0.699); */
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(143, 138, 138);
+    color: rgb(0, 0, 0);
+}
+
+#equal{
+    color: orangered;
+}

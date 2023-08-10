@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    
+}
+.top{
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    top: 0;
+    position: sticky;
+    background-color: black;
+    box-shadow: 10px 10px 15px rgba(115, 108, 108, 0.842);
+}
+
+.logo{
+    width: 20vw;
+    height: 15vh;
+}
+.logo > img{
+    width: 20vw;
+    height: 15vh;
+    border-radius: 80px;
+    margin-left: 15px;
+}
+.port{
+      width: 40vw;    
+      text-align: center;
+      height: 15vh;
+      margin-top: 25px;
+}
+.port >h1{
+    font-size: 3em;
+    color: white;
+    /* text-shadow: 3px 8px  rgba(255, 0, 0, 0.523); */
+    text-align: center;
+}
+.social{
+    width: 40vw;
+    height: 15vh;
+    
+}
+.social>div{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 25px;
+
+}
+.social>div>a>img{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+
+   
+}
+.ver{
+    border: 2px solid white;
+    height: 50px;
+    box-shadow: 10px 10px 15px rgba(115, 108, 108, 0.842);
+    
+}
+.container{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+}
+.nav{
+    height: 85vh;
+    width: 12vw;
+    box-shadow: 10px 10px 15px rgba(115, 108, 108, 0.842);
+    
+    
+}
+.nav>ul>li{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+
+}
+
+.nav>ul>li>a{
+  text-decoration: none;
+  margin: auto;
+  padding-top: 70px;
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  
+}
+.nav>ul>li>a:hover{
+    border-bottom: 2px solid white;
+    color: crimson;
+    padding-bottom: 15px;
+}
+.intro{
+    width: 88vw;
+    height: 85vh;
+    color: aquamarine;
+    display: flex;
+}
+
+
+
+.self{
+    /* background-color: yellow; */
+    width: 50vw;
+    /* text-align: center; */
+    align-items: center;
+}
+.myself > h1{
+    margin-top: 4em;
+    margin-left: 3em;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 3px 8px  rgba(104, 87, 87, 0.587);
+}
+
+.wrapper{
+    margin-top: 1rem;
+    display: inline-flex;
+    margin-left: 9rem;
+    color: black;
+    /* background-color: green; */
+    
+}
+.wrapper > .static{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.wrapper> .dynamic{
+    line-height: 45px;
+    height: 45px;
+    /* background-color: red; */
+    overflow: hidden;
+    
+}
+.dynamic > ul>li{
+    list-style: none;
+    /* color: crimson; */
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: white;
+    position: relative;
+    top: 0;
+    animation: slide 8s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -180px;
+    }
+}
+
+.dynamic > ul>li>span{
+    position: relative;
+    color: crimson;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.dynamic > ul>li>span::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: black;
+    border-left: 3px solid white;
+    animation: typing 2s steps(10) infinite;   
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.btn{
+    width: 7rem;
+    margin-left: 9rem;
+    margin-top: 3.5rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgba(70, 70, 218, 0.689);
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.pic{
+    /* background-color: aqua; */
+    width: 38vw;
+    
+}
+.picImg{
+      margin: auto;
+      margin-left: 4rem;
+}
+.picImg > img{
+    /* background-color: yellow; */
+    width: 30vw;
+    height: 60vh;
+    /* margin: auto; */
+    margin-top: 5.5em;
+    border-radius: 100%;
+    border: 3px solid white;
+    filter: drop-shadow(12px 12px 15px  rgba(105, 98, 98, 0.877));
+}
+
+/* ----------------------------------------CONTACT FORM-------------------------------- */
+
+.contact{
+    /* background-color: aqua; */
+    margin:auto;
+    margin-top: 0;
+    width: 50vw;
+    height: 60vh;
+    color: black;
+}
+.contact>h1{
+    color: crimson;
+    margin-top: 1em;
+    margin-left: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+form{
+    padding: 2rem;
+    color: white;
+}
+form > label{
+    font-size: 1.5em;
+    padding: 1rem;
+}
+
+form > input{
+    border: none;
+    border-radius: 5px;
+    width: 30rem;
+    margin-left: 20px;
+    font-size: 1.3em;
+    padding: .2em;
+   
+}
+.send{
+    width: 8em;
+    margin-left: 3.4rem;
+    padding: .5em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    font-weight: bold;
+}
+.send:hover{
+    background-color: rgba(66, 66, 249, 0.767);
+    cursor: pointer;
+    color: crimson;
+}
+
+.contactNum{
+    /* background-color: yellow; */
+    width: 50vw;
+    height: 20vh;
+    margin-top: 3rem;
+    /* padding-left: 10%; */
+    /* padding-top: 20%; */
+}
+ .email> img{
+    width: 15%;
+    height: 15%;
+    margin-left: 2%;
+
+}
+.phone> img{
+    width: 20%;
+    height: 20%;
+
+}
+.phone,.email{
+    width: 25vw;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+}
+
+.email > h3{
+    margin: auto;
+    color: white;
+}
+.phone >h3{
+    margin: .5em;
+    color: white;
+}
+/* --------------------------------ABOUT FORM--------------------------------------------------------------- */
+.ganga{
+    /* background-color: yellow; */
+    height: 55vh;
+    width: 70vw;
+    margin: auto;
+}
+.ganga > p{
+    font-size: 2em;
+    padding: px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* --------------------------------------SKILLS FORM ------------------------------------------------------------*/
+
+
+#skills {
+    /* background-color: yellow; */
+    margin: 20px auto;
+    text-align: center;
+    width: 650px;
+    align-items: center;
+    color: white;
+    
+}
+#skills > h2{
+    font-size: 3em;
+    margin-top: 10px;
+}
+
+.skill {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.skill > h3{
+    font-size: 2em;
+    padding: 15px;
+}
+
+.percentage {
+    position: relative;
+    height: 25px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+
+.fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.html {
+    width: 85%;
+    background-color: #FF5733;
+}
+
+.css {
+    width: 75%;
+    background-color: #3498DB;
+}
+
+.javascript {
+    width: 60%;
+    background-color: #F39C12;
+}
+
+.python {
+    width: 50%;
+    background-color: #27AE60;
+}
+/* --------------------------PROJECT FORM-------------------------------------------------- */
+
+#projects {
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+}
+#projects > h2{
+    color: blue;
+    font-size: 2em;
+}
+
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: crimson;
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #297FB8;
+}
+
